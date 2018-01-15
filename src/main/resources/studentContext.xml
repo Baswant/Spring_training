@@ -1,0 +1,18 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+	http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+	
+	<bean id="Student" class="com.test.student.Student">
+	<property name="sno" value="1001"></property>
+	<property name="sname" value="Ram"></property>
+	<property name="scourse" value="Mtech"></property>	
+	</bean>
+	
+	<bean id="Student1" class="com.test.beans.Student" lazy-init="default" scope="">
+	<constructor-arg name="sno" value="1001"></constructor-arg>
+	<constructor-arg name="sname" value="John"></constructor-arg>
+	<constructor-arg name="scourse" value="MS"></constructor-arg>
+	
+	</bean>
+</beans>

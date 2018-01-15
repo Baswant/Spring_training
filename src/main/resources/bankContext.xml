@@ -1,0 +1,16 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+	http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+
+	<bean id="boatransfer" class="com.test.bank.BOAtransfer" />
+	<bean id="cititransfer" class="com.test.bank.Cititransfer" />
+	<bean id="wellsfargotransfer" class="com.test.bank.Wellsfargotransfer" />
+
+	<bean id="bank" class="com.test.bank.Bank">
+		<property name="ifundtransfer" ref="boatransfer"></property>
+	</bean>
+
+
+</beans>

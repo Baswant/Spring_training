@@ -1,0 +1,18 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+	http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+	
+	<bean id="employee" class="com.test.employee.Employee" autowire="byType">
+	<property name="eno" value="1001"></property>
+	<property name="ename" value="Ram"></property>	
+	<!-- <property name="eaddress" ref="eaddress"></property> -->
+	</bean>
+	
+	<bean id="eaddress" class="com.test.employee.Address">
+	<property name="city" value="overland park"></property>
+	<property name="state" value="kansas"></property>	
+	</bean>
+	
+		
+</beans>
