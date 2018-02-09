@@ -12,7 +12,7 @@
 	<bean id="Student1" class="com.test.beans.Student" lazy-init="default" scope="">
 	<constructor-arg name="sno" value="1001"></constructor-arg>
 	<constructor-arg name="sname" value="John"></constructor-arg>
-	<constructor-arg name="scourse" value="MS"></constructor-arg>
+
 	
 	</bean>
 </beans>
