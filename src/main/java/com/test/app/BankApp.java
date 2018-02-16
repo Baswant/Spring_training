@@ -11,7 +11,7 @@ public class BankApp {
 
 		ApplicationContext springContainer = new ClassPathXmlApplicationContext("bankContext.xml");
 		Bank bank = springContainer.getBean("bank", Bank.class);
-		System.out.println(bank);
+		
 		
 
 	}
